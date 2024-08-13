@@ -1,0 +1,753 @@
+* {box-sizing: border-box; margin: 0; font-style: none; padding: 0;}
+
+/* FUENTES */
+  /* Títulos */
+  .englebert-regular {
+    font-family: "Englebert", cursive;
+    font-weight: 400;
+    font-style: normal;}
+
+    /* Texto */
+  .handlee-regular {
+    font-family: "Handlee", cursive;
+    font-weight: 400;
+    font-style: normal;}
+
+
+/* BARRA MENÚ */
+header {margin: 0; padding: 0;}
+.menu {position: fixed; z-index: 5;}
+.caja1h {height: 65px; background: linear-gradient(#FA8B94, #0F102F); opacity: 90%;}
+
+.caja4h {background: linear-gradient(#FA8B94, #0F102F); opacity: 90%;}
+
+.boton1 {background: linear-gradient(#FA8B94, #0F102F); opacity: 90%; align-content: center;}
+
+.boton1m {background: linear-gradient(#FA8B94, #0F102F); opacity: 90%; text-align: center; 
+          color: #FBEEE5; font-family: "Englebert", cursive; font-size: 20px; text-decoration: none; padding-top: 15px; position: relative; overflow: hidden;}
+
+.boton1m span {width: 100%; height: 100%; background: #F8F3F3; opacity: 50%; position: absolute; transition: 0.3s; top: 0%; left: -200%;}
+
+.boton1m:hover {color: white;}
+.boton1m:hover span {left: 0%; }
+
+
+/* MENÚ HAMBURGUESA */
+.nav_label {background: linear-gradient(#FA8B94, #0F102F); opacity: 90%; cursor: pointer; align-content: center;}
+
+.nav_menu {background: linear-gradient(#FA8B94, #0F102F); opacity: 90%; border-radius: 10px; clip-path: circle(0 at center); transition: clip-path 0.5s ease-in-out;}
+
+.nav_menu li {list-style: none; font-family: "Englebert", cursive; text-align: center; padding: 0.7rem; font-size: 20px; }
+
+.menu_h {text-decoration: none; color: #FBEEE5;}
+.menu_h span {width: 100%; height: 100%; background: #F8F3F3; opacity: 50%; position: absolute; transition: 0.3s; top: 0%; left: -200%;}
+
+
+.nav_input {display: none;}
+
+.nav_input:checked + .nav_menu {clip-path: circle(100% at center);}
+
+/* Responsive */
+@media (max-width:1199px) {.boton1m {display: none;}}
+
+@media (min-width:1199px) {.nav_label {display: none;}}
+
+@media (min-width:1199px) {.dropdown_menu {display: none;}}
+
+@media (max-width:768px) {.caja1po {display: none;}}
+@media (max-width:768px) {.caja3po {display: none;}}
+
+@media (max-width:1199px) {.caja3c {display: none;}}
+@media (min-width:1199px) {.caja4c {display: none;}}
+
+
+/* HOME PAGE */
+/* Presentación */
+#presentacion {
+  background-image: url(hada.jfif); height: 900px; background-repeat: no-repeat; background-size: cover; display: flex; justify-content: center; align-items: center; text-align: center;}
+
+.caja3p {position: relative; padding: 20px; max-width: 400px;}
+
+.circulo {width: 100%; height: auto; position: absolute; top: 0; left: 50%; transform: translateX(-50%); z-index: 1;}
+
+.titulo {font-family: "Englebert", cursive; font-size: 2.5rem; color: #0F102F; text-align: center; position: relative; 
+        z-index: 2; margin-top: 20%; padding-bottom: 30px;}
+
+.texto_presentacion {font-family: "Handlee", cursive; font-size:1.7rem; color: #1C1D39; text-align: center; position:    relative; z-index: 3; margin-bottom: 50px;}
+
+.boton_contenedor {display: flex; justify-content: center; align-items: center; position: relative; z-index: 4;}
+
+.boton_p {font-family: "Handlee", cursive; font-size: 1.7rem; color: black; text-align: center; text-decoration: none; background-color: #97D0C9; opacity: 90%; padding: 10px 20px; border-radius: 20px; margin: 0 auto;}
+
+@media (max-width: 768px) {.caja3p {padding: 10px;}
+.titulo {font-size: 1.5rem;}
+.texto_presentacion {font-size: 1.25rem;}
+.boton_p {font-size: 1rem; padding: 8px 16px;}}
+
+@media (max-width: 576px) {#presentacion {height: auto; padding: 40px 20px;}
+.caja3p {max-width: 100%;}
+.titulo {font-size: 1.25rem;}
+.texto_presentacion {font-size: 1rem;}
+.boton_p {font-size: 0.875rem; padding: 6px 12px;}
+.circulo {width: 70%; padding-top: 10%;}}
+
+
+/* PORTAFOLIO */
+#portafolio {background-color: #0F102F; padding: 50px 0;}
+
+.caja1po, .caja3po {display: flex; justify-content: center; align-items: center; background-color: #0F102F; margin-bottom: 20px;}
+
+.grupo1, .grupo2 {width: 100%; max-height: 1300px; object-fit: cover;}
+
+.caja2po {color: #FBEEE5; text-align: center; padding-top: 20px;}
+
+.titulo_p {font-family: "Englebert", cursive; font-size: 2.5rem; color: #FBEEE5; background-color: #96D0C9; opacity: 90%; border-radius: 20px; padding: 10px; margin-bottom: 50px; margin-top: 100px;}
+
+.texto_p {font-family: "Handlee", cursive; font-size: 1.7rem; color: #FBEEE5; margin-bottom: 100px;}
+
+.carousel {padding-bottom: 50px; width: 80%; margin: 0 auto;}
+
+.carousel-item img {max-height: 600px; object-fit: cover; width: 20%; max-width: 100%; max-height: 600px; object-fit: cover; border: 5px solid #FFFFFF; border-radius: 10px;}
+
+.boton-ver-mas {font-family: "Handlee", cursive; font-size: 1.7rem; text-decoration: none; background-color: #D9D9D9; opacity: 90%; padding: 10px 20px; border-radius: 20px; margin: 0 auto; color: #0F102F; display: inline-block; transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;}
+
+.boton-ver-mas:hover {background-color: #0F102F; color: #D9D9D9; transform: scale(1.05); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);}
+
+@media (max-width: 768px) 
+{.titulo_p {font-size: 1.5rem;}
+  .texto_p {font-size: 1.25rem;}
+  .carousel-item img {max-height: 300px;}}
+
+@media (max-width: 576px) 
+{.titulo_p {font-size: 1.25rem;}
+  .texto_p {font-size: 1rem;}
+  .carousel-item img {max-height: 250px;}
+  .boton-ver-mas {font-size: 1rem; padding: 6px 12px;}}
+
+  @media (max-width: 768px) {.caja1po, .caja3po {display: none;}
+    .caja2po {padding-top: 20px;}}
+
+
+/* Contáctame */
+.contact-section {background-color: #1A1B4B; padding: 50px 0; display: flex; justify-content: center; align-items: center; flex-direction: column;}
+
+.container {display: flex; align-items: center; justify-content: space-between; width: 80%; max-width: 1200px; height: 900px;}
+
+.character img {width: 100%; max-width: 500px; height: auto; border-radius: 50%; margin-bottom: 20px;}
+
+.social-section {background-color: #F7A6A6; border-radius: 80px 80px 80px 80px; padding: 40px; text-align: center; width: 50%;}
+
+.social-section p {font-family: "Handlee", cursive; color: #FFFFFF; font-size: 2rem; margin-bottom: 30px;}
+
+.social-icons {display: flex; flex-direction: column; align-items: center; gap: 20px;}
+
+.icon-container {position: relative;}
+
+.icon {font-size: 30px; color: #FFFFFF; text-decoration: none;
+display: inline-block; transition: transform 0.3s ease; padding: 15px; background-color: #333; border-radius: 50%;}
+
+.icon:hover {transform: scale(1.1);}
+
+.icon-text {visibility: hidden; opacity: 0; background-color: #0F102F; color: #fff; text-align: center; border-radius: 6px; padding: 5px 10px; position: absolute; z-index: 1; bottom: 110%; left: 50%; transform: translateX(-50%); transition: opacity 0.3s ease; font-family: "Handlee", cursive;}
+
+.icon-text::after {content: "";position: absolute; top: 100%; left: 50%; margin-left: -5px; border-width: 5px;border-style: solid; border-color: #000 transparent transparent transparent;}
+
+.icon-container:hover .icon-text {visibility: visible; opacity: 1;}
+
+.icon.instagram { background-color: #FA8A93; }
+.icon.email { background-color: #96D0C8; }
+.icon.github { background-color: #2E417B; }
+.icon.linkedin { background-color: #6b3461; }
+
+
+@media (max-width: 1199px) {
+  .container {flex-direction: column; align-items: center; height: 700px;}
+  .character img {width: 300px; border-radius: 100px;}
+  .social-section {width: 100%; border-radius: 80px; height: 10px;}
+  .social-icons {flex-direction: row; justify-content: center;}
+
+  .icon {
+      height: 70px; 
+      background-color: transparent;
+      color: #333;
+      padding: 10px;
+      border-radius: 50%;
+  } 
+
+  .icon img {height: 50px;}
+
+  .social-icons {display: flex; flex-direction: row; align-items: center; gap: 20px; height: 20px;}
+
+  .social-section {padding-bottom: 220px;}
+
+  .social-section
+
+  .icon:hover {
+      transform: none;
+  }
+
+  .icon-container:hover .icon-text {
+      visibility: hidden;
+      opacity: 0;}}
+
+/* Footer */
+.footer {background-color: #FA8A93; color: #fff; display: flex; justify-content: center; align-items: center; padding: 10px 20px; bottom: 0; width: 100%; box-sizing: border-box;
+height: 80px;}
+
+.footer p {margin: 0; margin: 0 15px; font-family: "Handlee", cursive; font-size: 1.3rem;}
+
+@media (max-width: 600px) {
+  .footer {
+      flex-direction: column;
+      text-align: center;
+      height: 110px;
+      padding: 20px;
+  }
+  .footer p {
+      margin: 5px 0;
+  }
+}
+
+
+/* ACERCA DE MÍ */
+.about-me {background-image: url(fondo.png); background-size: cover; background-repeat: no-repeat; border-radius: 15px; height: 900px;}
+
+.profile-pic {padding-top: 30px; padding-bottom: 100px;}
+
+.profile-pic img {height: 500px; width: 900px;}
+
+.about-content1 {
+  background-color: #FBA1A8;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 2.5rem;
+  font-family: "Englebert", cursive;
+  color: #FBEEE5;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.presentacion {margin-top: -200px;}
+
+.about-content2 {
+  background-color: #FBA1A8;
+  border-radius: 10px;
+  font-size: 1.7rem;
+  font-family: "Handlee", cursive;
+  color: #FBEEE5;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.quote {
+  background-color: #2e4b4b;
+  color: #fff;
+  font-family: "Handlee", cursive;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  font-size: 1.7rem;
+}
+
+.flower-left,
+.flower-right {
+  position: absolute;
+  top: 50%;
+  width: 150px; /* Ajusta el tamaño de la flor */
+  height: 150px; /* Ajusta el tamaño de la flor */
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.flower-left {
+  left: -30px; /* Ajusta la posición horizontal */
+  background-image: url('path_to_left_flower_image'); /* Reemplaza con la ruta de tu imagen */
+}
+
+.flower-right {
+  right: 70px; /* Ajusta la posición horizontal */
+  background-image: url('path_to_right_flower_image'); /* Reemplaza con la ruta de tu imagen */
+}
+
+.quote p {
+  position: relative;
+  z-index: 2; /* Asegura que el texto esté por encima de las flores */
+}
+
+.persona {
+  background-color: #fae5e5;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  height: 600px;
+}
+
+.persona p {background-color: #FDBDC2; color: #6C3461; padding: 20px; border-radius: 60px; font-size: 1.7rem; font-family: "Handlee", cursive;}
+
+.skills {
+  background-color: #734e96;
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  padding: 40px 0;
+  height: 500px;
+}
+
+.habilidades {margin-top: -200px;}
+
+.skillstitulo {
+  font-size: 2.5rem;
+  font-family: "Englebert", cursive;
+  margin-bottom: 50px;
+  background-color: #FBEEE5;
+  border-radius: 60px;
+  padding: 20px;
+  color: #734e96;
+  position: relative;
+  z-index: 2;
+}
+
+.skill-item p {
+  font-size: 1.7rem;
+  font-family: "Handlee", cursive;
+}
+
+.skill-item img {
+  width: 90px;
+  height: 90px;
+  padding-bottom: 10px;
+  opacity: 100%;
+}
+
+.butterfly, .flower-bottom-left {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.butterfly {
+  top: 10%;
+  left: 5%;
+  width: 150px;
+  height: 150px;
+  background-image: url(mariposa2.png); 
+}
+
+.flower-bottom-left {
+  bottom: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  background-image: url(florizquierda.png); 
+}
+
+@media (max-width: 768px) {
+  .skillstitulo {
+      font-size: 2rem;
+  }
+
+  .skill-item p {
+      font-size: 1.5rem;
+  }
+
+  .skill-item img {
+      width: 70px;
+      height: 70px;
+  }
+
+  .butterfly {
+      width: 90px;
+      height: 90px;
+  }
+
+  .flower-bottom-left {
+      width: 100px;
+      height: 100px;
+  }
+  .quote {margin-top: 500px;}
+  .persona {margin-top: 200px;}
+  .skills {margin-top: 100px; height: 1000px;}
+  .skillstitulo {margin-top: 300px;}
+  .blog {size: 600px;}
+  .blogtitulo {margin-top: 300px;}
+}
+
+.blog {
+  background-color: #97D0C9;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  height: 500px;
+}
+
+.blogs {margin-top: -300px;}
+
+.blogtitulo {font-size: 2.5rem; font-family: "Englebert", cursive; color: #0F102F; background-color: #FBEEE5; padding: 20px; border-radius: 60px;}
+
+.blog p {color: #0F102F; font-size: 1.7rem; font-family: "Handlee", cursive; margin-top: 80px;}
+
+.botonBlog {
+  background-color: #92c7c7;
+  border-color: #f49d9d;
+  transition: background-color 0.3s;
+  font-family: "Englebert", cursive;
+  text-decoration: none;
+  font-size: 1.7rem;
+  padding: 20px;
+  border-radius: 100px;
+  color: #000;
+}
+
+.botonBlog:hover {
+  background-color: #f49d9d;
+}
+
+.grupoFooter {display: flexbox; position: absolute; z-index: 2;}
+.footerAcerca {
+  background-color: #97D0C9;
+  color: #fff; /* Cambia el color del texto si deseas */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: 80px;
+}
+.footerAcerca p {
+  margin: 0;
+  margin: 0 15px;
+  font-family: "Handlee", cursive;
+  font-size: 1.3rem;
+}
+@media (max-width: 600px) {
+  .footerAcerca {
+      flex-direction: column;
+      text-align: center;
+      margin-top: 200px;
+  }
+  .footerAcerca p {
+      margin: 5px 0;
+  }
+}
+
+.footerAcerca {
+  background-color: #734e96;
+  color: #fff;
+  position: relative;
+  padding: 20px 0;
+  overflow: hidden;
+  z-index: 1;
+  bottom: 80px;
+  height: 150px;
+}
+
+.footerAcerca p {
+  margin: 0;
+  font-family: "Handlee", cursive;
+}
+
+.footerAcerca .grupo-flores {
+  position: absolute;
+  width: 100%; /* Ajusta el tamaño según lo necesites */
+  height: 50px; /* Ajusta el tamaño según lo necesites */
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 2; /* Asegura que las flores estén por encima del fondo del footer */
+  bottom: 0px;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .footer .flower-left,
+  .footer .flower-right {
+      width: 100px;
+      height: 200px;
+  }
+}
+
+
+/* PORTAFOLIO */
+
+.bodyport {
+  background-color: #0F102F;
+}
+
+.portafoliotitulo {
+  font-size: 2.5rem;
+  color: #FBEEE5;
+  background-color: #6FA8A1;
+  padding-left: 100%;
+  padding-right: 100%;
+  border-radius: 100px;
+  margin-top: 150px;
+  padding: 10px;
+  font-family: "Englebert", cursive;
+  text-align: center;
+  width: 100%;
+}
+
+/* Portfolio Section */
+.portfolio {
+  flex: 1;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio p {
+  font-size: 1.5rem;
+  font-family: "Handlee", cursive;
+  color: #FBEEE5;
+  padding-top: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: justify;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+/* Button Container */
+.botonesport {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espacio entre botones */
+}
+
+/* Button Styles */
+.botonport {
+  background-color: #FA8B94;
+  font-size: 1.7rem;
+  font-family: "Englebert", cursive;
+  color: #FBEEE5;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 30px;
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Hover Effect */
+.botonport:hover {
+  transform: scale(1.1); /* Aumenta el tamaño al hacer hover */
+}
+
+.mariposa {
+  position: absolute;
+  width: 250px; /* Ajusta según necesites */
+}
+
+.mariposa-izquierda {
+  top: 10%;
+  right: 90%;
+}
+
+.mariposa-derecha {
+  top: 10%;
+  left: 90%;
+}
+
+.destellos {
+  width: 50px; /* Ajusta según necesites */
+}
+
+
+.destellos-inferior {
+  bottom: 5%;
+  left: 10%;
+}
+
+.flor {
+  position: absolute;
+  width: 200px; /* Ajusta según necesites */
+}
+
+.flor-izquierda {
+  top: 92%;
+  right: 90%;
+}
+
+.flor-derecha {
+  top: 92%;
+  left: 90%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .portafoliotitulo {
+      font-size: 2rem;
+      margin-top: 100px;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  .portfolio p {
+      font-size: 1.3rem;
+  }
+
+  .botonport {
+      font-size: 1.4rem;
+      padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .portafoliotitulo {
+      font-size: 1.5rem;
+      margin-top: 50px;
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+
+  .portfolio p {
+      font-size: 1.2rem;
+  }
+
+  .botonport {
+      font-size: 1.2rem;
+      padding: 8px 15px;
+  }
+}
+
+
+.footerP {
+  background-color: #0F102F;
+  color: #fff; /* Cambia el color del texto si deseas */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: 80px;
+}
+.footerP p {
+  margin: 0;
+  margin: 0 15px;
+  font-family: "Handlee", cursive;
+  font-size: 1.3rem;
+}
+@media (max-width: 600px) {
+  .footerP {
+      flex-direction: column;
+      text-align: center;
+  }
+  .footerP p {
+      margin: 5px 0;
+  }
+}
+
+
+
+/* ARTE TRADICIONAL */
+
+.bodyart {
+  background-color: #FBEEE5;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 110px;
+}
+
+.ribbon {
+  background-color: #fb748c;
+  color: white;
+  padding: 10px 20px;
+  font-family: "Englebert", cursive;
+  font-size: 2.5rem;
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  border-radius: 60px;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.ribbon:hover {
+  background-color: #ff92a5;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+.flower-left, .flower-right {
+  content: '';
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url(florrosa.png); /* Aquí se pone la imagen de la flor */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 200px; /* Padding superior para evitar interferencias */
+}
+
+.foto {
+  border: solid #fb748c 5px;
+  width: calc(40% - 30px); /* Dos imágenes por fila */
+  height: calc(500px);
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.foto:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .ribbon {
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 2rem;
+  }
+
+  .image-grid {
+    gap: 5px;
+    padding-top: 100px; /* Ajuste para dispositivos más pequeños */
+  }
+
+  .foto {
+    width: calc(50% - 10px); /* Dos imágenes por fila */
+  }
+}
+
+@media (max-width: 480px) {
+  .ribbon {
+    font-size: 1.5rem;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+.flower-left, .flower-right {width: 20px; height: 20px;}
+
+.foto {width: calc(100% - 10px);}}
+
